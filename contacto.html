@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+	LaData by Nacho	
+-->
+<html>
+	<head>
+		<title>LaData - Contacto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Página de contacto a ibarrau, creador del sitio de story telling La Data Web y el Blog de Bi Azure Data Platform. Power Bi Jujuy, Argentina. Power Bi Córdoba, Argentina." />
+		<meta name="author" content="ibarrau">
+		<meta name="keywords" content="Power Bi, Power Bi Jujuy, Power Bi Cordoba, Power Bi Argentina, Azure Jujuy, Azure Cordoba, Azure Argentina, Bi Cordoba, Bi Jujuy, Bi Argentina"/>
+		<meta name="distribution" content="global" />
+		<meta http-equiv="Content-Language" content="es" />
+		<meta name="copyright" content="ibarrau" />
+		<link rel="icon" href="images/a.png" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			@keyframes shake {
+			  10%, 90% {
+				transform: translate3d(-1px, 0, 0);
+			  }
+			  
+			  20%, 80% {
+				transform: translate3d(2px, 0, 0);
+			  }
+
+			  30%, 50%, 70% {
+				transform: translate3d(-4px, 0, 0);
+			  }
+
+			  40%, 60% {
+				transform: translate3d(4px, 0, 0);
+			  }
+			}
+		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120636676-1"></script>
+		<script>
+		function sendMsj() {
+				//var dataJ = {'personalizations': [{'to': [{'email': 'igna_barrau@hotmail.com'}],'subject': 'LaData:' +$('#name').val()}],'from': {'email': $('#email').val()},'content': [{'type': 'text/plain','value': $('#message').val()}]};
+
+				var dataF = {
+							"From": $('#email').val(),
+							"Subject": $('#name').val(),
+							"Texto": $('#message').val()
+							}
+
+				$.ajax({
+					url: 'https://prod-52.westus.logic.azure.com/workflows/cc44a9de22df420b805709d0d83c7b2a/triggers/manual/paths/invoke/sendmail/ladataweb?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qYEcbqz8owO6uJtQn2huidlR3-1uXapAb0u3A32q1zw',
+					headers: {
+						//'Authorization':'Bearer BIG TOKEN',
+						'Content-Type':'application/json'
+					},
+					method: 'POST',
+					dataType: 'json',
+					data: JSON.stringify(dataF),
+					success: function(data, xhr){
+					  console.log(xhr.status);
+					  //alert('Succes: '+JSON.stringify(dataF));
+					  $("#message").val("");
+					  $("#email").val("");
+					  $("#name").val("");
+					  alert("Gracias por escribirnos. Pronto leeremos su comentario y enviaremos respuesta al correo indicado.");
+					  window.location.href = window.location.href;
+					},
+					error: function(xhr, status, error) {
+						if (xhr.status == 202) {
+							console.log("Código: " + xhr.status + " sigue todo correcto.");
+							$("#message").val("");
+							$("#email").val("");
+							$("#name").val("");
+							alert("Gracias por escribirnos. Pronto leeremos su comentario y enviaremos respuesta al correo indicado.");
+							window.location.href = window.location.href;
+						}
+						else {
+							console.log(xhr.status);
+							//var err = eval("(" + xhr.responseText + ")");
+							alert(xhr.responseText + "Error al enviar. Por favor escriba por otro medio de contacto.\n Tumblr, Twitter o LinkedIn.");
+							//window.location.href = "mailto:igna_barrau@hotmail.com";
+						}
+					} 
+				  });
+			}
+		</script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-120636676-1');
+		</script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><img style="float:left; padding: 0.3em 0 0.1em 0;" width="30%" src="images/LD-trans.png" alt="LaData Logo" /></a>
+					<nav id="nav">
+						<a href="index.html" class="face" >Inicio</a>
+						<a href="informes.html" class="face" >Informes</a>
+						<a href="origenes.html" class="face" >FAQ - Datos</a>
+						<a href="http://blog.ladataweb.com.ar" class="face">Blog</a>
+						<a href="contacto.html" class="face" >¿Quien Soy? Contacto</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>			
+		<!-- One -->
+			<section id="main">
+				<div class="inner">
+					<header>
+						<h2>¿Quién Soy?</h2>
+						<h4>ibarrau</h4>
+					</header
+					<ul>
+						<li>Nacido en la provincia de Jujuy, Argentina.</li>
+						<li>Ingeniero en Sistemas de Información egresado de la Universidad Tecnológica Nacional</li>
+						<li>Empleo actual: Consultor Bi.</li>
+						<li>Trabaja con Microsoft Bi Suite en Azure Data Platform.</li>
+						<li>Power Bi Córdoba Argentina.</li>
+						<li>Loco y curioso por los datos.</li>
+					</ul>
+					<div class="row">
+						<div class="4u 12u$(xsmall)">&nbsp
+						</div>
+						<div class="4u 12u$(xsmall)" style="text-align:center">
+							<a href="https://twitter.com/ignacho_07" target="_blank" class="logo animated zoomIn"><img src="images/twitter.png"  ></a>
+							<a href="https://ar.linkedin.com/in/ignacio-barrau-b794b082" target="_blank" class="logo animated zoomIn"><img src="images/linkedin.png" ></a>
+							<a href="http://blog.ladataweb.com.ar/ask" target="_blank" class="logo animated zoomIn"><img src="images/tumblr.png" ></a>
+						</div>
+						<div class="4u 12u$(xsmall)">&nbsp
+						</div>
+					</div>
+					<br/><hr/><br/>
+					<h3>Contacto: </h3>
+					<!-- No olvides incluir tu CORREO en el mensaje si la consulta es privada para responderte allí. Caso contraría saldrá visible para todos el en blog. -->
+					<!-- <form action="http://blog.ladataweb.com.ar/ask"> -->
+					<form method="post" action="javascript:sendMsj()" enctype="text/plain">
+						
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" required />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" required></textarea>
+						</div>
+						
+						<ul class="actions">
+
+							<li>
+								<!-- <input id="enviar" type="submit" value="Enviar Mensaje" style="background-color: transparent;box-shadow: inset 0 0 0 2px #FF8C00;color: #FF8C00 !important;"  /> -->
+								<input id="enviar" type="submit" value="Enviar Mensaje" style="background-color: transparent;box-shadow: inset 0 0 0 2px #FF8C00;color: #FF8C00 !important;"  />
+								
+							</li>
+
+						</ul>
+					</form>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<div class="row">
+						<div class="4u 12u$(xsmall)">
+							<a href="breakout/index.html" class="logo animated zoomIn"><img src="images/ladatatrucho.png" style="width:40%" ></a>
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<div class="copyright">
+								<br/>&copy; LaData all rights reserved. <br/>Respetar copyright y no scrappear sin permiso.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			
+			
+			/*
+			function sendshit(){
+				//alert('Opción no disponible por el momento. Trabajando en ello :) \nEscriba a igna_barrau@hotmail.com') ;
+				Email.send($("#email").val(),
+				"igna_barrau@hotmail.com",
+				$("#name").val(),
+				$("#message").val(),
+				"smtp.sendgrid.net",
+				"ladatamail",
+				"BIG TOKEN",
+				function done(message) { alert("Mail enviado.") });
+
+				});			
+			});
+			
+			function sendMsj() {
+				alert('Opción no disponible por el momento. Trabajando en ello :) \nEscriba a igna_barrau@hotmail.com') ;
+			}
+	
+			/*
+			POST https://outlook.office.com/api/v2.0/me/sendmail
+
+			{
+			  "Message": {
+				"Subject": "LaData user!",
+				"Body": {
+				  "ContentType": "Text",
+				  "Content": "AQUI el testo."
+				},
+				"ToRecipients": [
+				  {
+					"EmailAddress": {
+					  "Address": "igna_barrau@hotmail.com"
+					}
+				  }
+				]
+			  }
+
+			}*/
+			
+			
+			</script>
+			
+			
+	</body>
+</html>

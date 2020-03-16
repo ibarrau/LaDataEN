@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  		<title>LaData - Analíticas Curiosas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="LaData es un sitio de análisis de datos estadísticas de cualquier fuente de datos abierto corriendo por internet. Todo lo que te importa una mie... y no podes dejar de ver. Power Bi Córdoba, Argentina. Eso que no te importa una m... y no podes dejar de leer" />
+		<meta name="author" content="ibarrau">
+		<link rel="icon" href="../images/a.png" type="image/x-icon"> 
+		<link rel="stylesheet" href="../assets/css/main.css" />		
+		<link rel="stylesheet" href="../assets/css/slideshow.css" />		
+		<link rel="stylesheet" href="../assets/css/animated.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120636676-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-120636676-1');
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width", initial-scale=1.0, user-scalable="no"/>
+		<link href="breakout.css" media="screen, print" rel="stylesheet" type="text/css" /> 
+</head> 
+ 
+<body> 
+
+<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="../index.html" class="logo animated zoomIn"><img style="float:left; padding: 0.3em 0 0.1em 0;" width="30%" src="../images/LD-trans.png" alt="LaData logo" /></a>
+			<nav id="nav" class="animated fadeInRight">
+				<a href="../index.html" class="face" >Inicio</a>
+				<a href="../informes.html" class="face">Informes</a>
+				<a href="../origenes.html" class="face">Orígenes de datos</a>
+				<a href="../contacto.html" class="face">¿Quien Soy? Contacto</a>
+			</nav>
+		</div>
+	</header>
+	<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			
+  <div id="breakout">
+    <canvas id="canvas">
+      <div class='unsupported'>
+        Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+      </div>
+    </canvas>
+    <div id="levels">
+      <img id="next" class="disabled" src="images/up.png"   title="next level">
+      <img id="prev" class="disabled" src="images/down.png" title="previous level">
+      <span id="label">level:</span><span id="level"></span>
+    </div>
+    <div id="controls">
+      <input id='sound' type='checkbox' />
+      <label for='sound'>sound</label>
+    </div>
+    <div id="instructions" style='display:none;'>
+      <div class='keyboard'>
+        <b>space</b> to start<br>
+        <b>left/right</b> to move paddle<br>
+        <b>up/down</b> to change level
+      </div>
+      <div class='touch'>
+        <b>touch here</b> to start<br>
+        <b>drag</b> paddle to move<br>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+  <script src="breakout.js"></script>
+  <script src="levels.js"></script>
+  <script>
+  Game.ready(function() {
+    var game = Game.start('canvas', Breakout);
+  });
+  </script>
+	
+</body> 
+</html>

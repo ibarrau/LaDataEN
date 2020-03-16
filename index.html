@@ -4,14 +4,46 @@
 -->
 <html>
 	<head>
-		<title>LaData Web - StoryTelling</title>
+		<title>LaDataWeb - StoryTelling y Blog Comunitario</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="LaData is a data analysis site of any open data source on the internet. You can find things you don't care and can't stop checking out. Power Bi Córdoba, Argentina. " />
+		<meta name="description" content="LaData es un sitio de análisis de datos de cualquier fuente de datos abierto corriendo por internet. En otras palabras Storytelling. Todo lo que te importa una mie... y no podes dejar de ver. Power Bi Córdoba, Argentina. Power Bi Jujuy, Argentina" />
 		<meta name="author" content="ibarrau">
-		<link rel="icon" href="a.png" type="image/x-icon"> 	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">		
+		<meta name="keywords" content="Power Bi, Power Bi Jujuy, Power Bi Cordoba, Power Bi Argentina, Azure Jujuy, Azure Cordoba, Azure Argentina, Bi Cordoba, Bi Jujuy, Bi Argentina"/>
+		<meta name="distribution" content="global" />
+		<meta http-equiv="Content-Language" content="es" />
+		<meta name="copyright" content="ibarrau" />		
+		<meta property="og:locale" content="es_ES">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="LaData Web - StoryTelling y Blog Comunitario">
+		<meta property="og:url" content="http://www.ladataweb.com.ar/">
+		<meta property="og:site_name" content="LaDataWeb">		
+		<link rel="icon" href="images/a.png" type="image/x-icon"> 
+		<link rel="stylesheet" href="assets/css/Animated/normalize.css" />
+		<link rel="stylesheet" href="assets/css/Animated/demo.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />		
+		<link rel="stylesheet" href="assets/css/slideshow.css" />		
 		<link rel="stylesheet" href="assets/css/animated.css" />
+		<link rel="stylesheet" href="assets/css/Animated/component.css" />
+		<style>
+			@keyframes shake {
+			  10%, 90% {
+				transform: translate3d(-1px, 0, 0);
+			  }
+			  
+			  20%, 80% {
+				transform: translate3d(2px, 0, 0);
+			  }
+
+			  30%, 50%, 70% {
+				transform: translate3d(-4px, 0, 0);
+			  }
+
+			  40%, 60% {
+				transform: translate3d(4px, 0, 0);
+			  }
+			}
+		</style>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120636676-1"></script>
 		<script>
@@ -21,82 +53,301 @@
 
 		  gtag('config', 'UA-120636676-1');
 		</script>
-		<script>
-			function animate(){
-				const elementLeft =  document.querySelector('.leftpane')
-				elementLeft.classList.add('animated', 'bounceInLeft')
-				const elementRight =  document.querySelector('.rightpane')
-				elementRight.classList.add('animated', 'bounceInRight')
-			}
-		</script>
-		<style>
-			body, html {
-			  width: 100%;
-			  height: 100%;
-			  margin: 0;
-			}
-
-			.container {
-			  width: 100%;
-			  height: 100%;
-			}
-
-			.leftpane {
-				width: 35%;
-				height: 100%;
-				float: left;
-				background-color: #FF8C00;
-				background: linear-gradient(180deg,rgba(0,0,0,.4) 0,transparent), url( orange-backgroud.jpg );
-				border-collapse: collapse;
-				text-align: center;
-				color:white;
-				font-family:Arial, Helvetica, sans-serif;
-				padding: 70px 0;
-			}
-
-			.middlepane {
-				width: 50%;
-				height: 100%;
-				float: left;
-				background-color: royalblue;
-				border-collapse: collapse;
-			}
-
-			.rightpane {
-			  width: 65%;
-			  height: 100%;
-			  position: relative;
-			  float: right;
-			  background-color: #f0eef3;
-			  border-collapse: collapse;
-			  text-align: center;
-			  font-family:Arial, Helvetica, sans-serif;
-			  padding: 70px 0;
-			}
-
-			.toppane {
-			  width: 100%;
-			  height: 100px;
-			  border-collapse: collapse;
-			  background-color: #f0eef3;
-			  text-align: center;
-			  font-family:Arial, Helvetica, sans-serif;
-			}
-		</style>
+	
 	</head>
-	<body onload="animate()">
-		<div class="container">
-		  <!--<div class="toppane">Title</div>-->
-		  <div class="leftpane">
-			<br><br>
-			<img width="30%" src="a.png" alt="LaData logo" />
-			<h1>Site in Maintenance</h1>
-			<br />You can contact us in our <a href="http://www.ladataweb.com.ar">spanish web</a>.
-			<br /><br />ibarrau@ladataweb.com
-		  </div>		  
-		  <div class="rightpane">
-			<img width="100%" src="maintenance-page_01.gif" alt="LaData animation" />
-		  </div>
-		</div>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo animated zoomIn"><img style="float:left; padding: 0.3em 0 0.1em 0;" width="30%" src="images/LD-trans.png" alt="LaData logo" /></a>
+					<nav id="nav" class="animated fadeInRight">
+						<a href="index.html" class="face" >Inicio</a>
+						<a href="informes.html" class="face">Informes</a>
+						<a href="origenes.html" class="face">FAQ - Datos</a>
+						<a href="http://blog.ladataweb.com.ar" class="face">Blog</a>
+						<a href="contacto.html" class="face">¿Quien Soy? Contacto</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			
+		<!-- Banner -->
+		<section>
+			<div id="large-header" class="large-header" style="background-image: url('images/demo-1-bg.jpg');" height=80vh>
+					<canvas id="demo-canvas"></canvas>Section 1</a>
+					<h1 class="main-title" style="font-size: 3em;" ><nav class="navigation" id="mainNav">
+			<a class="navigation__link" href="#inicio">LaData <span class="thin">Web</span></a></h1>
+					
+			</div>
+		</section>
+			<!--<section id="banner">
+				<div class="inner">
+					<h1>Introspect: </h1>
+					<ul class="actions">
+						<li><a href="#" class="button alt">Get Started</a></li>
+					</ul>
+				</div>
+			</section>
+							<div style="background: #f3f3f3;">
+						<div class="row" style=" margin: 0 0 0 0; padding: 0 0 0 0;">
+							<div class="6u 12u$(xsmall)" style="text-align: left; font-size:130%; color:#FF6501; margin: 0 0 0 0; padding: 0 0 0 0;">
+								<b>Analítica de lo que encuentre</b>
+							</div>
+							<div class="6u 12u$(xsmall)" style="text-align: right; font-size:130%; color:#FF6501; margin: 0 0 0 0; padding: 0 0 0 0;">
+								<b>Un blog dedicado al Análisis de Datos de datos abiertos que encuentren en internet</b>		
+							</div>
+						</div>
+				</div>-->
+		<!-- Inicio -->	
+			<section id="inicio"><br><br>
+				<div class="inner">
+					<article>
+						<div class="content animated fadeInLeft" style="text-align: left; font-size:130%; color:black; margin: 0 0 0 0; padding: 0 0 0 0;">							
+								<!-- <b>Analítica de lo que encuentre</b> -->
+								<b>Un sitio dedicado a Storytelling de Datos abiertos que encuentren en internet.</b>
+						</div>
+					</article>
+					<article class="alt animated fadeInRight" style="text-align: right; font-size:130%; color:#FF6501; margin: 0 0 0 0; padding: 0 0 0 0;animation-delay: 500ms;animation-name: fadeInRight;"  data-wow-delay="500ms">
+						<div class="content">
+								<b>Blog comunitario de prácticas de Azure Data Platform.</b>
+								<!--<b>Eso que no te importa una m... y no podes dejar de leer</b>-->
+						</div>
+					</article>
+				</div><br>
+			</section>
+			
+
+			
+			<section id="main" >
+				<div class="inner">	
+					<!--<section>				
+						<div class="row">
+							<div class="6u 12u$(xsmall)" >
+								<p style="text-align: left; font-size:130%; color:#FF6501;";><b>Analítica de lo que encuentre</b></p>
+							</div>
+							<div class="6u 12u$(xsmall)">
+								<p style="text-align: right; font-size:130%; color:#FF6501;";><b>Un blog dedicado al Análisis de Datos de datos abiertos que encuentren en internet</b></p>							
+							</div>
+						</div>
+					</section>-->
+					<!-- Slideshow container -->
+					<div class="slideshow-container animated zoomIn" style=" visibility: visible; animation-delay: 750ms; animation-name: zoomIn;" data-wow-delay="750ms">
+
+					  <!-- Full-width images with number and caption text -->
+					  <div class="mySlides fade">
+						<div class="numbertext"></div>
+						<img src="images/la1-ajuste.png" style="width:100%">
+						<div class="text" style="font-size:130%; color:#1c1c1c; "><b>Analiticas Curiosas.</b></div>
+					  </div>
+
+					  <div class="mySlides fade">
+						<div class="numbertext"></div>
+						<img src="images/la2.png" style="width:100%">
+						<div class="text" style="font-size:130%; color:#1c1c1c; "><b>Explorá Internet. Encontrá de todo.</b></div>
+					  </div>
+
+					  <div class="mySlides fade">
+						<div class="numbertext"></div>
+						<img src="images/Power-BI-Portada.jpg" style="width:100%">
+						<div class="text" style="font-size:130%; color:#1c1c1c;"></div>
+					  </div>
+
+					  <!-- Next and previous buttons 
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  -->
+					<br>
+					</div>
+
+					<!--The dots/circles onclick="currentSlide(1)" -->
+					<div style="text-align:center">
+					  <span class="dot" ></span> 
+					  <span class="dot" ></span> 
+					  <span class="dot" ></span> 
+					</div>
+				</div>
+			</section>
+			
+		<!-- One -->
+			<section id="one" style="background: #f3f3f3;">
+				<div class="inner">
+					<header>
+						<h2>Aprender está a una googleada de distancia.</h2>
+					</header>
+					<p>Conéctese, aprenda y debata con expertos en inteligencia empresarial y colegas</p>
+					<ul class="actions">
+						<li><a href="http://community.powerbi.com" class="button alt">Power Bi Community</a></li>
+					</ul>
+				</div>
+			</section>
+			<hr/>
+		<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<header>
+								<h3>Surgimiento LaData</h3>
+							</header>
+							<div class="image fit">
+								<img src="images/pensante.jpg" alt="Salinas Grandes Jujuy LaData" />
+							</div>
+							<p>La idea de éste sitio inicia luego de trabajar para un cliente importante en una empresa privada. Los productos que distribuía eran de gran interes para conocer y analizar. Por privacidad de datos no podía mostrar ésto con las comunidades. Por tanto decidí compartir mi trabajo, datos curiosos, estadísticas deseadas con el resto del mundo explotando datos abiertos.</p>
+						</div>
+					</article>
+					<article class="alt">
+						<div class="content">
+							<header>
+								<h3>Ignacio Barrau</h3>
+							</header>
+							<div class="image fit">
+								<img src="images/bigdatajujuy2.jpg" alt="IceClimber LaData" />
+							</div>
+							<p>Ignacio es una persona apasionada por la música. Su fanatismo de los video juegos de la rama de nintendo y computadoras lo llevó por el lado del software y sistemas hasta llegar a los datos. Conoció la programación y la exploración de datos. La analítica de datos lo cautivó al punto de llegar a desear el compartir sus análisis para todos.</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Three 
+			<section id="three">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<span class="icon fa-laptop"></span>
+							<header>
+								<h3>Tempus Feugiat</h3>
+							</header>
+							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna lorem ullamcorper laoreet, lectus arcu.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+							<span class="icon fa-diamond"></span>
+							<header>
+								<h3>Aliquam Nulla</h3>
+							</header>
+							<p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</div>
+					</article>
+					<article>
+					<div class="content">
+							<span class="icon fa-laptop"></span>
+							<header>
+								<h3>Sed Magna</h3>
+							</header>
+							<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</section>
+		-->
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<div class="row">
+						<div class="4u 12u$(xsmall)">
+							<a href="breakout/index.html" class="logo animated zoomIn"><img src="images/ladatatrucho.png" style="width:40%" ></a>
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<div class="copyright">
+								<br/>&copy; LaData all rights reserved. <br/>Respetar copyright y no scrappear sin permiso.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/TweenLite.min.js"></script>
+			<script src="assets/js/EasePack.min.js"></script>
+			<script src="assets/js/rAF.js"></script>
+			<script src="assets/js/demo-1.js"></script>
+			<script>
+				var slideIndex = 0;
+				showSlides(slideIndex);
+
+				// Next/previous controls
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				    var i;
+					var slides = document.getElementsByClassName("mySlides");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none"; 
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {slideIndex = 1} 
+					slides[slideIndex-1].style.display = "block"; 
+					setTimeout(showSlides, 3000); // Change image every 2 seconds
+				}
+			</script>
+			
+					<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	
+			<script>
+				$(document).ready(function() {
+					$('.navigation__link').bind('click', function(e) {
+					//$('a[href*=#]').bind('click', function(e) {
+							e.preventDefault(); // prevent hard jump, the default behavior
+
+							var target = $(this).attr("href"); // Set the target as variable
+
+							// perform animated scrolling by getting top-position of target-element and set it as scroll target
+							$('html, body').stop().animate({
+									scrollTop: $(target).offset().top
+							}, 600, function() {
+									location.hash = target; //attach the hash (#jumptarget) to the pageurl
+							});
+
+							return false;
+					});
+			});
+
+			$(window).scroll(function() {
+					var scrollDistance = $(window).scrollTop();
+
+					// Show/hide menu on scroll
+					//if (scrollDistance >= 850) {
+					//		$('nav').fadeIn("fast");
+					//} else {
+					//		$('nav').fadeOut("fast");
+					//}
+				
+					// Assign active class to nav links while scolling
+					$('.page-section').each(function(i) {
+							if ($(this).position().top <= scrollDistance) {
+									$('.navigation a.active').removeClass('active');
+									$('.navigation a').eq(i).addClass('active');
+							}
+					});
+			}).scroll();
+			</script>
+	
+	
+
+			
 	</body>
 </html>
