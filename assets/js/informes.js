@@ -261,7 +261,7 @@
 			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiN2M2Njk0ZmItMTJkMi00ZGNlLWE0OWMtNjU4YjYxNjRmNjc3IiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>'
 		}			
 		var html = '<header class="major special">'
-					+ '<h1>Nintendo EShop</h1>'
+					+ '<h1>Nintendo EShop (temporalmente fuera de servicio)</h1>'
 					+ '<p style="text-align:justify">Este informe es la clara esencia de la pobreza Argentina y su devaluación del dolar constante. El reporte contiene la posibilidad de conocer los juegos que tienen mayor diferencia de precios en cualquier tienda del mundo respecto de la tienda de Estados Unidos.'
 					+ '	<br/>Así mismo, en ambas páginas, cuenta con un buscador de juegos a nivel mundial para poder comparar sobre un juego selectivamente.	'
 					+ '	<br/>¡Llegó la hora de comprar sin ser cagado!'
@@ -283,7 +283,7 @@
 			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiN2I2ZjE2M2ItNzc1MC00N2Q4LThjNWQtNDU3YzMxOWFiMDM4IiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe>';
 		}
 		var html = '<header class="major special">'
-					+ '<h1>Xbox Store</h1>'
+					+ '<h1>Xbox Store (proximamente actualizado...)</h1>'
 					+ '<p style="text-align:justify">¿Sabes que es barato y que no lo es? ¡Ahora podes!'
 					+ '	<br/>Conocé cuales son los juegos que mejor precio tiene comparado contra la región local del mismo ordenados por su diferencia para saber cual es el más dispar.'
 					+ '	<br/>Buscá tu juego favorito y mirá en que región está más barato. Tal vez coincida con la tuya o puedas cambiarla si son los más bratos de allí.'
