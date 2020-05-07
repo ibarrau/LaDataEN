@@ -65,6 +65,9 @@
 			case "pesos":
 				addPesos();
 				break;
+			case "covid19":
+				addCovid19();
+				break;
 			default:
 				break;
 		}
@@ -337,6 +340,29 @@
 				+ o_iframe
 				+'</header>';
 		addElement('dentro', 'div', 'divito', html);
+	}
+	
+	function addCovid19() {
+		var o_iframe = "";
+		if ( $( "#divito" ).length ) {
+			removeElement('divito');
+		}
+		if (isMobile.any()) {		
+		//if(true == true){			
+			o_iframe = '<div class="resp-container"><iframe class="resp-iframe" style="text-align:center;" width="320" height="880" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiYTU2NmIyNDktN2E5OC00MDcwLTg0MzYtYjFlNmJmZTZmZTg4IiwidCI6ImNhMWQwOGIwLTk1NDMtNGJkOS04NzE4LTQyYmVjZGRjNzc4NiIsImMiOjR9"></iframe></div>';
+		}
+		else {
+			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiMjM1Yzc0NTMtZmZhYS00NjQ5LWI4ODUtMDE3MTIzMTZkYzkyIiwidCI6ImNhMWQwOGIwLTk1NDMtNGJkOS04NzE4LTQyYmVjZGRjNzc4NiIsImMiOjR9"></iframe> ';
+		}
+		var html = '<header class="major special">'
+					+ '<h1>Seguimiento diario de Coronavirus Mundial</h1>'
+					+ '<p style="text-align:justify">A pesar de que los días pasan la realidad es que la noticia no deja de ser el presente de nuestro día a día. El virus, el bicho, la pandemia o como quieran llamarle a dejado al mundo en cuarentena total.'
+					+ '	<br/>Por esto no queríamos dejar de traer a nuestro sitio estadísticas mundiales que son actualizadas todos los días para conocer los valores que atraviesan todos los países del mundo.'
+					+ '	<br/>El informe cuenta con un mapa mundial que nos ayudará a conocer el detalle mínimo de cada país como así también la última página con gráficos evolutivos que, según el país filtrado, podremos conocer algunas tendencias que ayudaría a conocer si los picos o las recuperaciones comienzan a estabilizarse.'
+					+ '	<br/>Agradezco a un excelente compañero de trabajo <a href="https://pe.linkedin.com/in/gcpoggi">Gian Carlo Poggi</a> que es el creador de éste tablero y con mucho gusto aceptó la propuesta de publicarlo en el sitio.</p>'
+				+ o_iframe
+				+'</header>';
+		addElement('dentro', 'div', 'divito', html);		
 	}
 	
 	function addPoke() {
