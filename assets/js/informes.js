@@ -280,13 +280,13 @@
 			removeElement('divito');
 		}
 		if (isMobile.any()) {			
-			o_iframe = '<b>Informe NO ajustable a pantalla celular. Cargando versión escritorio..</b><br/><iframe width="990" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiN2I2ZjE2M2ItNzc1MC00N2Q4LThjNWQtNDU3YzMxOWFiMDM4IiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+			o_iframe = '<b>Informe NO ajustable a pantalla celular. Cargando versión escritorio..</b><br/><iframe width="990" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiNmI0MTBiNzAtYWYxNy00MTkzLWE0YzUtNzY2OGFiODA1NDgzIiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
 		}
 		else {
-			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiN2I2ZjE2M2ItNzc1MC00N2Q4LThjNWQtNDU3YzMxOWFiMDM4IiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiNmI0MTBiNzAtYWYxNy00MTkzLWE0YzUtNzY2OGFiODA1NDgzIiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
 		}
 		var html = '<header class="major special">'
-					+ '<h1>Xbox Store (proximamente actualizado...)</h1>'
+					+ '<h1>Xbox Store</h1>'
 					+ '<p style="text-align:justify">¿Sabes que es barato y que no lo es? ¡Ahora podes!'
 					+ '	<br/>Conocé cuales son los juegos que mejor precio tiene comparado contra la región local del mismo ordenados por su diferencia para saber cual es el más dispar.'
 					+ '	<br/>Buscá tu juego favorito y mirá en que región está más barato. Tal vez coincida con la tuya o puedas cambiarla si son los más bratos de allí.'
