@@ -258,13 +258,13 @@
 		}
 		if (isMobile.any()) {
 		//if(true == true){
-			o_iframe = '<div class="resp-container"><iframe class="resp-iframe" style="text-align:center;" width="320" height="880" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiYWM1MzYwZDctMjQxZi00ZmRjLWI1MzEtOTMxMGY5MjkzNzcxIiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe></div>    <div style="text-align:right;"><img src="images/uparrow.png" width=10%> &nbsp <br> Cambiar Páginas</div>';
+				o_iframe = '<div class="resp-container"><iframe class="resp-iframe" style="text-align:center;" width="320" height="880" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiYWM2N2U1MzUtOTJiMS00YjA1LWFmNTYtODMxYTVjMzkwZmM3IiwidCI6ImNhMWQwOGIwLTk1NDMtNGJkOS04NzE4LTQyYmVjZGRjNzc4NiIsImMiOjR9"></iframe></div>    <div style="text-align:right;"><img src="images/uparrow.png" width=10%> &nbsp <br> Cambiar Páginas</div>';
 		}
 		else {
-			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiN2M2Njk0ZmItMTJkMi00ZGNlLWE0OWMtNjU4YjYxNjRmNjc3IiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>'
+			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiY2YyMmFmNTktMTA1OC00MzQ5LTk1NDUtMTMzYTNjY2JjY2Y3IiwidCI6ImNhMWQwOGIwLTk1NDMtNGJkOS04NzE4LTQyYmVjZGRjNzc4NiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>'
 		}			
 		var html = '<header class="major special">'
-					+ '<h1>Nintendo EShop (temporalmente fuera de servicio)</h1>'
+					+ '<h1>Nintendo EShop</h1>'
 					+ '<p style="text-align:justify">Este informe es la clara esencia de la pobreza Argentina y su devaluación del dolar constante. El reporte contiene la posibilidad de conocer los juegos que tienen mayor diferencia de precios en cualquier tienda del mundo respecto de la tienda de Estados Unidos.'
 					+ '	<br/>Así mismo, en ambas páginas, cuenta con un buscador de juegos a nivel mundial para poder comparar sobre un juego selectivamente.	'
 					+ '	<br/>¡Llegó la hora de comprar sin ser cagado!'
