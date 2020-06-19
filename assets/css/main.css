@@ -4012,7 +4012,7 @@
 	.resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 260%; 
+    padding-top: 245%; 
 	//padding-top: 75%; es medida 4:3
 	//padding-bottom: 56.25%; es medida 16:9
 	}

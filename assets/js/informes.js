@@ -419,7 +419,7 @@
 		}
 		if (isMobile.any()) {
 		//if(true == true){
-			o_iframe = '<div class="resp-container"><iframe class="resp-iframe" width="450" height="1065" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiOWY2NTg0NGEtYWU5Ni00ZDcxLTg3NGQtYWVmYTdhNDY0N2Q2IiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe></div>    <div style="text-align:right;"><img src="images/uparrow.png" width=10%> &nbsp <br> Cambiar Páginas</div>';
+			o_iframe = '<div class="resp-container"><iframe class="resp-iframe" width="320" height="880" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiOWY2NTg0NGEtYWU5Ni00ZDcxLTg3NGQtYWVmYTdhNDY0N2Q2IiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe></div>    <div style="text-align:right;"><img src="images/uparrow.png" width=10%> &nbsp <br> Cambiar Páginas</div>';
 		}
 		else {
 			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiMzIwNTczYzAtODAyYy00NjY2LTk2MGMtNTE2MmExN2M3NTczIiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>'
