@@ -68,6 +68,9 @@
 			case "covid19":
 				addCovid19();
 				break;
+			case "comprasCovid19":
+				addComprasCovid19();
+				break;
 			default:
 				break;
 		}
@@ -363,6 +366,29 @@
 				+ o_iframe
 				+'</header>';
 		addElement('dentro', 'div', 'divito', html);		
+	}
+	
+		function addComprasCovid19() {
+		var o_iframe = "";
+		if ( $( "#divito" ).length ) {
+			removeElement('divito');
+		}
+		if (isMobile.any()) {			
+			o_iframe = '<b>Informe NO ajustable a pantalla celular. Cargando versión escritorio..</b><br/><iframe width="990" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiODU4NjE4NjAtYWZjNy00ZjIzLThlMjMtNjQ2YTZlZDM3ZjQxIiwidCI6IjY1ZjA2NjFjLWI5NzMtNDZlYi05YzVlLTk2ZGNlZjdiODJlZSJ9"></iframe> <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+		}
+		else {
+			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiODU4NjE4NjAtYWZjNy00ZjIzLThlMjMtNjQ2YTZlZDM3ZjQxIiwidCI6IjY1ZjA2NjFjLWI5NzMtNDZlYi05YzVlLTk2ZGNlZjdiODJlZSJ9"></iframe> <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+		}
+		var html = '<header class="major special">'
+					+ '<h1>Seguimiento de compras Coronavirus CABA</h1>'
+					+ '<p style="text-align:justify">Somos conscientes que estos tiempos de pandemia lo han cambiado todo, y asistimos a diversas actuaciones por parte de los gobiernos mundiales con diferentes medidas para paliar las consecuencias negativas de esta crisis.'
+					+ '	<br/>Parte de un ejercicio social y que está relacionado con la transparencia de información es el esfuerzo que realiza la ciudad de CABA en su portal de datos abiertos: https://data.buenosaires.gob.ar/ en donde se disponibiliza información relevante y pública sobre diversas áreas gubernamentales.'
+					+ '	<br/>A continuación analizamos las compras que se vienen realizando por parte del estado con un tablero desarrollado en PowerBI que nos permite acceder a esta información de una forma visual e intuitiva. '
+					+ '	<br/>Dicho tablero fue desarrollado con motivo del PowerBI Days Edition Argentina2020.'
+					+ '	<br/>Agradezco a los oradores (<a href="https://www.linkedin.com/in/rigoxu/">Rigoberto Malca La Rosa</a>, <a href="https://www.linkedin.com/in/axel-daniel-garcia-gimenez-991810a8/">Axel Daniel Garcia Gimenez</a>) que conocí en el evento antes mecionado que hicieron un excelente trabajo creando este tablero y con mucho gusto aceptaron la propuesta de publicarlo en el sitio.</p>'
+				+ o_iframe
+				+'</header>';
+		addElement('dentro', 'div', 'divito', html);
 	}
 	
 	function addPoke() {
