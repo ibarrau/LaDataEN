@@ -29,6 +29,9 @@
 			case "mundial":
 				addMundial();
 				break;
+			case "marado":
+				addMarado();
+				break;
 			case "russia2018":
 				addRusia();
 				break;
@@ -180,6 +183,28 @@
 					+ '	<br/>Conocé el qué, cuando, cómo del crack para goles y asistencias. ¿Sabes su promedio de gol por partido? No esperes más y chequealo aquí.'
 					+ '	<br/>COMPARÁ sus resultados contra sus rivales en la página 4 ingresando el nombre del equipo o país rival (en inglés).'
 					+ '	<br/>Agradezco al creador de éste informe Tristan Malherbe que construyo estas maravillosas estadísticas con la api cuyos datos están en la última página.</p>'
+				+ o_iframe
+				+'</header>';
+		addElement('dentro', 'div', 'divito', html);
+	}
+	
+		function addMarado() {
+		var o_iframe = "";
+		if ( $( "#divito" ).length ) {
+			removeElement('divito');
+		}
+		if (isMobile.any()) {			
+			o_iframe = '<div class="resp-container"><iframe class="resp-iframe" style="text-align:center;" width="320" height="880" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiMDk5NTI1N2ItZDkwMS00ZDJiLWIwOGMtZTFiNjZmMzQ4MjY2IiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9"></iframe></div>   <div style="text-align:right;"><img src="images/uparrow.png" width=10%> &nbsp <br> Cambiar Páginas</div>';
+		}
+		else {
+			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiYzFiYTdjN2UtYWQ3YS00Y2JkLWEwMTMtMGRiNGM3MGIwOWFkIiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9&pageName=ReportSection"></iframe> <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+		}
+		var html = '<header class="major special">'
+					+ '<h1>This is Diego Maradona</h1>'
+					+ '<p style="text-align:justify">El diez, también conocido como el D10S del fútbol, ha dejado este mundo con una huella inmensa'
+					+ '	<br/>El ícono e ídolo del fútbol mundial y tan importante símbolo de Argentina merece que se conozcan sus estadísticas.'
+					+ '	<br/>Seguramente la mayoría de los argentinos saben en qué equipos jugaron y que nos trajo una Copa Mundial de la Fifa. Sin embargo, hay mucho más que el crack argentino conquistó en su carrera futbolística.'
+					+ '	<br/>Todos los datos fueron extraídos de wikipedia.</p>'
 				+ o_iframe
 				+'</header>';
 		addElement('dentro', 'div', 'divito', html);
