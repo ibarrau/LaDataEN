@@ -56,6 +56,9 @@
 			case "movie":
 				addMovies();
 				break;
+			case "starwars":
+				addStarwars();
+				break;
 			case "comics":
 				addComics();
 				break;
@@ -487,4 +490,28 @@
 	}
 	function dele() {
 		removeElement('divito');
+	}
+	
+	function addStarwars() {
+		var o_iframe = "";
+		if ( $( "#divito" ).length ) {
+			removeElement('divito');
+		}
+		if (isMobile.any()) {			
+			o_iframe = '<b>Informe NO ajustable a pantalla celular. Cargando versión escritorio..</b><br/><iframe width="990" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiOTM2NTkwODYtNWZjZC00YTYwLTkwYmYtZTBkM2I5NTg2ZmRlIiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+		}
+		else {
+			o_iframe = '<iframe width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiOTM2NTkwODYtNWZjZC00YTYwLTkwYmYtZTBkM2I5NTg2ZmRlIiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+			//VIEJO: https://app.powerbi.com/view?r=eyJrIjoiYzAwM2E2OTYtNmNjOS00NjVhLWFkZWYtNjAxMmU4ZjA5NDAwIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9
+		}
+		var html = '<header class="major special">'
+					+ '<h1>Star Wars</h1>'
+					+ '<p style="text-align:justify">¡Hola comunidad! Soy Facundo Montenegro. Colaboro como BI & Analytics consultant en la empresa Pi Data Strategy & Consulting y me especializo en el uso de Power BI.'
+					+ '	<br/>Siempre me interesó el manejo de datos y la combinación que estos pueden llegar a generar. Una increíble información que lleva a tomar decisiones. En esta ocasión les comparto algo mucho más relajante (para algunos) que desarrollé basado en mi fanatismo por Star Wars. '
+					+ '	<br/>En este reporte podrán encontrar toda la información relacionada a las películas de Star Wars tales como, críticas, premios, personajes, planetas, entre otras. Los datasets utilizados son de Kaggle y data.world.'
+					+ '	<br/>¿Cuál película crees que es mejor? ¿Merece esa crítica? ¿Te consideras Jedi o Sith? No lo dudes más y sumate al camino de la fuerza.'
+					+ '	<br/>Y me olvidaba.. May the Power BI be with you!.</p>'
+				+ o_iframe
+				+'</header>';
+		addElement('dentro', 'div', 'divito', html);
 	}
