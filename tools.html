@@ -4,10 +4,10 @@
 -->
 <html>
 	<head>
-		<title>LaData Web - 404</title>
+		<title>LaData - Orígenes de datos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Página de 404 del sitio de story telling La Data Web y el Blog de Bi Azure Data Platform. Power Bi Jujuy, Argentina. Power Bi Córdoba, Argentina." />
+		<meta name="description" content="¿Queres saber sobre los orígenes de datos que utiliza LaData para realizar sus informes? Power Bi Córdoba, Argentina." />
 		<meta name="author" content="ibarrau">
 		<meta name="keywords" content="Power Bi, Power Bi Jujuy, Power Bi Cordoba, Power Bi Argentina, Azure Jujuy, Azure Cordoba, Azure Argentina, Bi Cordoba, Bi Jujuy, Bi Argentina"/>
 		<meta name="distribution" content="global" />
@@ -36,7 +36,6 @@
 		</style>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120636676-1"></script>
-		
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
@@ -61,25 +60,44 @@
 					</nav>
 				</div>
 			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>			
-		<!-- One -->
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
 			<section id="main">
 				<div class="inner">
-					<header>
-						<h1 style="text-align:center;">404</h1>						
+					<header class="major special">
+						<h1>Herramientas/Tools</h1>
 					</header>
-					<br/>
-					<hr/><br/>					
-						File not found - Invalid URL
-						The url provided does not exists.
-						For root URLs (like http://example.com/) you can provide an index.html file.
-						<br/><br/>
-							<a href="https://www.ladataweb.com" class="button alt">Go to LaDataWeb</a>							
-						<br/><br/>
+
+					<!-- Text -->
+						<section>							
+							<h4>SimplePBI</h4>
+							<img style="float:left; padding: 0.1em 1.1em 0.1em 0.1em;" width="18%" src="images/SimplePBI_Logo.png" alt="LaData logo" />
+							SimplePBI es una librería desarrollada en Python que facilita el uso de la API REST de Power Bi. 
+							<br>Un día, SimplePBI contendrá todas las categorías en la API (administración, conjuntos de datos, informes, etc.). No dude en consultar el documento para obtener una comprensión más profunda de una solicitud específica: https://docs.microsoft.com/en-us/rest/api/power-bi/
+							<br>Estamos haciendo todo lo posible para que esta biblioteca sea útil para la comunidad. Este proyecto no es un trabajo remunerado para nosotros. Es un proyecto público comunitario. Tenga paciencia si envía un problema y no se soluciona de inmediato. Es una forma de expresar nuestra pasión por compartir conocimientos.
+							<br><br />
+							&nbsp &nbsp &nbsp <a href="https://pypi.org/project/SimplePBI/" class="button alt">Descargar</a>							
+							<br><br />
+							<h4>Data Quality Report</h4>
+							<img style="float:left; padding: 0.1em 1.1em 0.1em 0.1em;" width="18%" src="images/DataQualityReportLogo.png" alt="LaData logo" />
+							<div>
+							El informe de calidad de datos es una herramienta externa (External Tool) para agregar en Power Bi. Crea un nuevo archivo de Power Bi Desktop a partir del modelo cargado en el primero.
+							El nuevo archivo contendrá:							
+								<li>Primer vistazo a la estructura de las tablas y errores/espacios en blanco.</li>
+								<li>Comprensión de las distribuciones de datos de texto/fecha y número de cada tabla.</li>
+								<li>Obtener información de columnas categóricas. Categoría más utilizada para cada tabla.</li>
+								<li>Comprobar cómo se construyen las relaciones.</li>
+							<br>
+							&nbsp &nbsp &nbsp<a href="https://github.com/ladataweb/data-quality-report/releases/tag/v0.1" class="button alt">Descargar</a>							
+						</section>
+
+					
+
 				</div>
 			</section>
 
-		<!-- Footer -->
+				<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
 					<div class="row">
@@ -95,57 +113,12 @@
 				</div>
 			</section>
 
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-			
-			
-			/*
-			function sendshit(){
-				//alert('Opción no disponible por el momento. Trabajando en ello :) \nEscriba a igna_barrau@hotmail.com') ;
-				Email.send($("#email").val(),
-				"igna_barrau@hotmail.com",
-				$("#name").val(),
-				$("#message").val(),
-				"smtp.sendgrid.net",
-				"ladatamail",
-				"BIG TOKEN",
-				function done(message) { alert("Mail enviado.") });
-
-				});			
-			});
-			
-			function sendMsj() {
-				alert('Opción no disponible por el momento. Trabajando en ello :) \nEscriba a igna_barrau@hotmail.com') ;
-			}
-	
-			/*
-			POST https://outlook.office.com/api/v2.0/me/sendmail
-
-			{
-			  "Message": {
-				"Subject": "LaData user!",
-				"Body": {
-				  "ContentType": "Text",
-				  "Content": "AQUI el testo."
-				},
-				"ToRecipients": [
-				  {
-					"EmailAddress": {
-					  "Address": "igna_barrau@hotmail.com"
-					}
-				  }
-				]
-			  }
-
-			}*/
-			
-			
-			</script>
-			
 			
 	</body>
 </html>
