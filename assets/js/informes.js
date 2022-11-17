@@ -32,8 +32,8 @@
 			case "marado":
 				addMarado();
 				break;
-			case "russia2018":
-				addRusia();
+			case "qatar2022":
+				addQatar();
 				break;
 			case "copaamerica":
 				addCopaAmerica();
@@ -76,6 +76,9 @@
 				break;
 			case "comprasCovid19":
 				addComprasCovid19();
+				break;
+			case "posts":
+				addBuscador();
 				break;
 			default:
 				break;
@@ -466,6 +469,30 @@
 		addElement('dentro', 'div', 'divito', html);
 	}
 	
+	function addQatar() {
+		var o_iframe = ""
+		if ( $( "#divito" ).length ) {
+			removeElement('divito');
+		}
+		if (isMobile.any()) {
+		//if(true == true){
+			o_iframe = '<b>Informe NO ajustable a pantalla celular. Cargando versión escritorio..</b><br/><div class="resp-container"><iframe class="resp-iframe" style="text-align:center;" width="320" height="880" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiZjEwOTkwMTMtZjgxZC00MjcyLWI2MGMtYzkyNDJlNGNhZDUzIiwidCI6ImRjZmI2MzJhLWI4OTYtNDI4OC04NDEzLWVjOGQ5NTQxMDZlNiIsImMiOjR9"></iframe></div>    <div style="text-align:right;"><img src="images/uparrow.png" width=10%> &nbsp <br> Cambiar Páginas</div>';
+		}
+		else {
+			o_iframe = '<iframe style="text-align:center;" width="1020" height="550" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiODI0ODM4ZTItODI1Ni00OWJjLWE4ODItZWYxODUyMTM2ZjIyIiwidCI6ImNhMWQwOGIwLTk1NDMtNGJkOS04NzE4LTQyYmVjZGRjNzc4NiIsImMiOjR9"></iframe>  <div style="text-align:center;"><img src="images/uparrow.png" width=5% /> <br> Cambiar Páginas</div>';
+		}
+		
+		var html = '<header class="major special" visibility: hidden>'
+					+ '<h1>Qatar 2022</h1>'
+					+ '<p>Hola! Soy Mati Oria, me desempeño como BI & Analytics consultant en la empresa Pi Data Strategy & Consulting.'
+					+ '	<br/>Con la excusa del mundial aproveché para unir 2 cosas que me gustan mucho, el futbol y el análisis de datos.'
+					+ '	<br/>En el reporte vamos a poder investigar un poco acerca de los estadios, las distintas selecciones y sobre cada partido del Mundial Qatar 2022, además de tener un seguimiento de resultados, clasificaciones y cruces en las etapas finales.'
+					+ '	<br/>¡Espero lo disfruten como yo disfruté armarlo!</p>'
+				+ o_iframe
+				+ '</header>';
+		addElement('dentro', 'div', 'divito', html);
+	}
+	
 	function addMovies() {
 		var o_iframe = "";
 		if ( $( "#divito" ).length ) {
@@ -513,5 +540,27 @@
 					+ '	<br/>Y me olvidaba.. May the Power BI be with you!.</p>'
 				+ o_iframe
 				+'</header>';
+		addElement('dentro', 'div', 'divito', html);
+	}
+
+	function addBuscador() {
+		var o_iframe = "";
+		if ( $( "#divito" ).length ) {
+			removeElement('divito');
+		}
+		if (isMobile.any()) {
+		//if(true == true){
+			o_iframe = '<div class="resp-container"><iframe class="resp-iframe" width="320" height="880" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiMTU0OGZiZDUtYjAyNS00YmNhLTliMmYtODc2NjQzNzc1ZTk1IiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9"></iframe></div>';
+		}
+		else {
+			o_iframe = '<iframe width="1080" height="650" scrolling="auto" src="https://app.powerbi.com/view?r=eyJrIjoiMjEzZDY2YmYtYTdmNy00MzM3LWEwOGQtMWU5M2UwNzFmMjZkIiwidCI6ImUwOTdkOGQ5LTc4ZTUtNDY0YS04ODhiLWZlOGJiODk5MTIwMCJ9"></iframe>'
+		}
+		var html = '<header class="major special">'
+					+ '<h1>Buscador de Posts</h1>'
+					+ '<p style="text-align:justify">Suele ocurrir que es realmente incómodo buscar contenido de artículos dentro de los blogs.'
+					+ '	<br/>Uno suele terminar buscando en google tipo "lo que necesito ladataweb".'
+					+ '	<br/>Como quien genera una buena alternativa creamos un informe de PowerBi para buscar dentro de los posts del blog LaDataWeb.</p>'
+				+ o_iframe
+				+ '</header>';
 		addElement('dentro', 'div', 'divito', html);
 	}
